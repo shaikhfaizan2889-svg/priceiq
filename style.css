@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("price iq 2");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #00bcd4;
+}
+
+.search {
+  display: flex;
+}
+
+.srch {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn {
+  margin-left: 5px;
+  padding: 6px 10px;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  height: 100vh;
+}
+
+.form {
+  position: static; /* remove absolute positioning */
+}
+
+.content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.content .par {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cn {
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cn a {
+  color: white;
+  text-decoration: none;
+}
+
+.form {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.btnn {
+  width: 100%;
+  padding: 10px;
+  background: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btnn a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link {
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.liw {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.icons a {
+  font-size: 20px;
+  color: #00bcd4;
+  margin: 0 5px;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+footer {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.cn:hover, .btnn:hover, .btn:hover {
+  background: #008c9e;
+  transition: 0.3s;
+}
