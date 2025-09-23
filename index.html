@@ -1,59 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Price IQ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuySmart</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
+
 </head>
 <body>
-  <div class="main">
-    <div class="navbar">
-      <div class="icon">
-        <h2 class="logo">Price IQ</h2>
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li><a href="#">DESIGN</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </div>
 
-      <div class="search">
-        <input class="srch" type="search" placeholder="Type To Text">
-        <button class="btn">Search</button>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">BuySmart</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>One-Stop Destination to Compare Prices Online</h1>
+    <p>Find the best prices, upcoming sales, and hottest deals on phones, TVs, watches, and more. Compare Amazon, Flipkart, and other stores!</p>
+    <a href="#deals" class="cta-btn">Explore Deals</a>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-cards">
+      <div class="card">
+        <img src="https://i.ibb.co/BHB27Dgv/iphone-15.jpg" alt="Smartphones">
+        <h3>Smartphones</h3>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/t7Ln3gg/laptop.png" alt="TVs">
+        <h3>Laptops</h3>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/5XP8r5YT/watch.jpg" alt="Watches">
+        <h3>Watches</h3>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/nqMktXrJ/headphones.jpg" alt="Headphones">
+        <h3>Headphones</h3>
       </div>
     </div>
+  </section>
 
-    <div class="content">
-      
-      <button class="cn"><a href="#">JOIN US</a></button>
 
-      <div class="form">
-        <h2>Login Here</h2>
-        <input type="email" placeholder="Enter Email Here">
-        <input type="password" placeholder="Enter Password Here">
-        <button class="btnn"><a href="#">Login</a></button>
-        <p class="link">Don't have an account<br><a href="#">Sign up here</a></p>
-        <p class="liw">Log in with</p>
-        <div class="icons">
-          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-        </div>
+  <!-- Top Brands -->
+  <section class="brands">
+    <h2>Top Brands</h2>
+    <div class="brand-logos">
+      <img src="https://i.ibb.co/bgXbzFk2/APPLE.jpg" alt="Apple">
+      <img src="https://i.ibb.co/RTFSyL5r/BOAT.png" alt="Boat">
+      <img src="https://i.ibb.co/bjhMX3N4/sony.jpg" alt="Sony">
+      <img src="https://i.ibb.co/fKCFLWM/SAMSUNG.png" alt="Samsung">
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+   
+  <section class="deals" id="deals">
+    <h2>Upcoming Deals & Offers</h2>
+    <div id="productsContainer" class="deal-cards">
+    <div class="deal-cards">
+      <div class="deal-card">
+        <img src="https://i.ibb.co/BHB27Dgv/iphone-15.jpg" alt="iPhone 15">
+        <h3>iPhone 15</h3>
+        <p>Amazon: ₹79,999 | Flipkart: ₹80,499</p>
+        <a href="#" class="buy-btn">Buy on Amazon</a>
+        <a href="#" class="buy-btn">Buy on Flipkart</a>
       </div>
+      <div class="deal-card">
+        <img src="https://i.ibb.co/twZvq2PJ/tv.jpg" alt="Samsung TV">
+        <h3>Samsung TV</h3>
+        <p>Amazon: ₹54,999 | Flipkart: ₹55,499</p>
+        <a href="#" class="buy-btn">Buy on Amazon</a>
+        <a href="#" class="buy-btn">Buy on Flipkart</a>
+      </div>
+      <div class="deal-card">
+        <img src="https://i.ibb.co/5XP8r5YT/watch.jpg" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>Amazon: ₹12,499 | Flipkart: ₹12,999</p>
+        <a href="#" class="buy-btn">Buy on Amazon</a>
+        <a href="#" class="buy-btn">Buy on Flipkart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Time to Buy Section -->
+<section class="best-time">
+  <h2>Best Time to Buy</h2>
+  <p>The best deals are usually available during festive sales like Diwali, New Year, and Amazon Prime Day. Compare prices and grab the hottest deals at the right time!</p>
+</section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Get Price Alerts & Deals</h2>
+    <p>Subscribe to our newsletter and never miss a deal!</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </section>
+
+ 
+
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h2>What Our Users Say</h2>
+  <div class="testimonial-cards">
+    <div class="testimonial-card">
+      <p>"BuySmart helped me save big on my new TV!"</p>
+      <strong> -Kashaf</strong>
+    </div>
+    <div class="testimonial-card">
+      <p>"Amazing deals and easy comparison. Highly recommend."</p>
+      <strong>- Maryam </strong>
     </div>
   </div>
+</section>
 
-  <!-- Ionicons CDN -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<footer>
-  <p>&copy; 2025 Price IQ. All rights reserved.</p>
-  <p>Contact: info@priceiq.com | Phone: +91 98765 43210</p>
-</footer>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BuySmart. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
 </body>
 </html>
+
+
+
